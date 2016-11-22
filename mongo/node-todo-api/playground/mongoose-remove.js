@@ -8,10 +8,10 @@ const {User} = require('./../server/models/user');
    console.log(result);
  });
 
- Todo.fineOneAndRemove({}).then((todo) => {
+ Todo.findOneAndRemove({}).then((todo) => {
    console.log(todo);
  });
- 
+
  Todo.findByIdAndRemove('').then((todo) => {
    console.log(todo);
  });
